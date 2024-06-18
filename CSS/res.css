@@ -1,0 +1,170 @@
+/* big phones */
+@media screen and (max-width:699px){
+    nav{
+        display: flex;
+        align-items: center;
+        padding: 16px;
+        width: 90%;
+        top: 20px;
+    }
+    main{
+        width: 85%;
+        
+    }
+    .app{
+        margin-top: 20%;
+    }
+    .myName p{
+        color:var(--token-a541e07b-6fda-4d50-9a24-16076657b0a9) ;
+        font-size: 20px;
+      }
+    .main-content .second img{
+        display: none;
+    }
+    .mywork p{
+        display: none;
+    }
+    .mywork{
+        border-radius:50%;
+    }
+    #home .main-content{
+        flex-direction: column;
+    }
+    .main-content .image img{
+        display: none;
+    }
+    .main-content .second img{
+        display: block;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .main-content .text{
+        text-align: center;
+    }
+    .main-content .main-btn{
+        justify-content: center;
+    }
+}
+/* small phones */
+@media screen and (max-width:450px){
+    nav{
+        display: flex;
+        align-items: center;
+        padding: 16px;
+        width: 95%;
+        top: 20px;
+    }
+    main{
+        width: 95%;
+        
+    }
+    .app{
+        margin-top: 30%;
+        padding: 17px;
+    }
+    .content {
+        padding: 5px;
+    }
+      
+    .myName p{
+        color:var(--token-a541e07b-6fda-4d50-9a24-16076657b0a9) ;
+        font-size: 20px;
+      }
+    .mywork p{
+        display: none;
+    }
+    .mywork{
+        border-radius:50%;
+    }
+    #home .main-content{
+        flex-direction: column;
+    }
+    .main-content .image img{
+        display: none;
+    }
+    .main-content .second img{
+        display: block;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .main-content .text{
+        text-align: center;
+    }
+    .main-content .main-btn{
+        justify-content: center;
+    }
+    /* project section */
+
+    .project-cards .project-card{
+        padding: 7px;
+    }
+    .project-card .card-text{
+        gap: 10px;
+    }
+    .card-text p{
+        font-weight: 500;
+        font-size: 15px;
+    }
+    .card-btn{
+        gap: 0px;
+        margin-right: 5px;
+    }
+    .card-btn p{
+        display: none;
+    }
+    .work-text h2{
+        font-size: 28px;
+    }
+    .socials .social-btns{
+        display: flex;
+        gap: 4px;
+        
+    }
+    .socials .social-text p{
+        font-size: 15px;
+    }
+    .social-btns button{
+        padding: 10px;
+        width: 35px;
+        height: 35px;
+    }
+    .footer .footer-text{
+        padding: 10px;
+    }
+     
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1024px){
+    nav{
+        display: flex;
+        align-items: center;
+        padding: 16px;
+        width: 75%;
+        top: 20px;
+    }
+    main{
+        width: 75%;
+        
+    }
+    .app{
+        margin-top: 20%;
+    }
+    .myName p{
+        color:var(--token-a541e07b-6fda-4d50-9a24-16076657b0a9) ;
+        font-size: 20px;
+      }
+    .main-content .second img{
+        display: none;
+    }
+   
+}
+
+/* laptops */
+@media screen and (min-width:1024px) {
+    .main-content .second img{
+        display: none;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+}

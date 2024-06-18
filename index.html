@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tobenna</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/res.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-links">
+                <span class="tab" onclick="openTab('home')"><i class=" fa fa-home" aria-hidden="true"></i></span>
+                <span class="tab" onclick="openTab('about')"><i class="fa fa-user" aria-hidden="true"></i></span>
+                <span class="tab" onclick="openTab('services')"><i class="fa fa-shopping-bag" aria-hidden="true"></i></span>
+            </div>
+
+            <div class="nav-btn">
+                
+                <a href=""><i class="fa fa-plus-circle" aria-hidden="true"></i>Hire me</a>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <div class="app">
+            <div class="content" id="home">
+                <div class="name">
+                    <div class="myName">
+                        <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                        <p>Web Developer</p>
+                    </div>
+                    <div class="mywork">
+                        <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                        <p>AVAILABLE FOR WORK</p>
+                    </div>
+                </div>
+
+                <div class="main-content">
+                    <div class="image second">
+                        <img src="imagies/profile(1).jpeg" alt="profile picture">
+                    </div>
+                    <div class="text">
+                        <h1>I'm Tobenna</h1>
+                        <p>Web Developer from Nigeria. Currently a student in Crawford University studing Computer Science.</p>
+
+                        <div class="main-btn">
+                            <button class="hire-btn"><i class="fa fa-plus-circle" aria-hidden="true"></i> Hire Me</button>
+                            <button  class="coptBtn"  data-email="your.email@example.com"><i class="fa fa-clone" aria-hidden="true"></i>
+                                Copy Email</button>
+                        </div>
+                    </div>
+
+                    <div class="image">
+                        <img src="imagies/profile(1).jpeg" alt="profile picture">
+                    </div>
+                </div>
+                
+                <div class="main-project">
+                    <div class="project-head">
+                        <div class="project-name">
+                            <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                            <p>Projects</p>
+                        </div>
+                        <div class="project-btn">
+                            <button onclick="openTab('services')">View More <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="project-cards">
+                        <div class="project-card">
+                            <div class="card-text">
+                                <img src="imagies/project-logo.png" alt="project icon">
+                                <p>NACOS Vote</p>
+                            </div>
+                            <div class="card-btn">
+                                <p>Visit Site</p>
+                                <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="card-text">
+                                <img src="imagies/project-logo.png" alt="project icon">
+                                <p>NACOS Vote</p>
+                            </div>
+                            <div class="card-btn">
+                                <p>Visit Site</p>
+                                <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="card-text">
+                                <img src="imagies/project-logo.png" alt="project icon">
+                                <p>NACOS Vote</p>
+                            </div>
+                            <div class="card-btn">
+                                <p>Visit Site</p>
+                                <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="card-text">
+                                <img src="imagies/project-logo.png" alt="project icon">
+                                <p>NACOS Vote</p>
+                            </div>
+                            <div class="card-btn">
+                                <p>Visit Site</p>
+                                <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="work">
+                    <div class="work-text">
+                        <h2>Let’s work together.</h2>
+                        <p>Creating user experience and visual appealing design</p>
+                        <p>Bringing users Imaginations to Life with code</p>
+                    </div>
+                    <div class="main-btn work-btn">
+                        <button class="hire-btn"><i class="fa fa-plus-circle" aria-hidden="true"></i> Hire Me</button>
+                        <button  class="coptBtn"  data-email="your.email@example.com" ><i class="fa fa-clone" aria-hidden="true"></i>
+                            Copy Email</button>
+                    </div>
+                </div>
+
+                <div class="socials">
+                    <div class="myName social-text">
+                        <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                        <p>Follow Me</p>
+                    </div>
+
+                    <div class="social-btns">
+                        <button><img src="imagies/github.svg" alt="github-logo"></button>
+                        <button><img src="imagies/instagram.svg" alt="instagram-logo"></button>
+                        <button><img src="imagies/twitter.svg" alt="twitter-logo"></button>
+                        <button><img src="imagies/whatsapp.svg" alt="whatsapp-logo"></button>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <div class="footer-text">
+                        <p>&copy;2024 Tobenna-Portfolio Side-project</p>
+                        <p>by <a href="index.html">Tobenna</a> Powered by <a href="">Vercel</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="content" id="about" style="display:none;">Our Services include...</div>
+            <div class="content"  id="services" style="display:none;">About us...</div>
+        </div>
+    </main>
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
