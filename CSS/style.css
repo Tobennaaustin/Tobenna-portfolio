@@ -87,14 +87,14 @@ nav{
 .content.active {
   display: block;
 }
-.nav-btn a{
+.nav-btn button{
   background-color: black;
   color: white;
   border-radius: 5px;
   padding: 10px;
   font-size: 18px;
 }
-.nav-btn a>i{
+.nav-btn button>i{
   margin-right: 10px;
   font-size: 15px;
 }
