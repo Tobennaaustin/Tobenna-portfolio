@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tobenna</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/contact.css">
     <link rel="stylesheet" href="CSS/res.css">
 </head>
 
@@ -20,7 +21,7 @@
 
             <div class="nav-btn">
                 
-                <a href=""><i class="fa fa-plus-circle" aria-hidden="true"></i>Hire me</a>
+                <button onclick="openTab('contact')"><i class="fa fa-plus-circle" aria-hidden="true"></i>Hire me</button>
             </div>
 
         </nav>
@@ -48,8 +49,8 @@
                         <p>Web Developer from Nigeria. Currently a student in Crawford University studing Computer Science.</p>
 
                         <div class="main-btn">
-                            <button class="hire-btn"><i class="fa fa-plus-circle" aria-hidden="true"></i> Hire Me</button>
-                            <button  class="coptBtn"  data-email="your.email@example.com"><i class="fa fa-clone" aria-hidden="true"></i>
+                            <button class="hire-btn" onclick="openTab('contact')"><i class="fa fa-plus-circle" aria-hidden="true"></i> Hire Me</button>
+                            <button  class="coptBtn"  data-email="tobennaaustin@gmail.com"><i class="fa fa-clone" aria-hidden="true"></i>
                                 Copy Email</button>
                         </div>
                     </div>
@@ -71,40 +72,40 @@
                     </div>
 
                     <div class="project-cards">
-                        <div class="project-card">
+                        <div class="project-card" onclick="openPort()">
                             <div class="card-text">
                                 <img src="imagies/project-logo.png" alt="project icon">
-                                <p>NACOS Vote</p>
+                                <p>My portfolio</p>
                             </div>
                             <div class="card-btn">
                                 <p>Visit Site</p>
                                 <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
                             </div>
                         </div>
-                        <div class="project-card">
+                        <div class="project-card" onclick="openNote()">
                             <div class="card-text">
                                 <img src="imagies/project-logo.png" alt="project icon">
-                                <p>NACOS Vote</p>
+                                <p>NoteBuddy</p>
                             </div>
                             <div class="card-btn">
                                 <p>Visit Site</p>
                                 <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
                             </div>
                         </div>
-                        <div class="project-card">
+                        <div class="project-card" onclick="openVote()">
                             <div class="card-text">
                                 <img src="imagies/project-logo.png" alt="project icon">
-                                <p>NACOS Vote</p>
+                                <p>CRU NACOS vote</p>
                             </div>
                             <div class="card-btn">
                                 <p>Visit Site</p>
                                 <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
                             </div>
                         </div>
-                        <div class="project-card">
+                        <div class="project-card" onclick="openValidkey()">
                             <div class="card-text">
                                 <img src="imagies/project-logo.png" alt="project icon">
-                                <p>NACOS Vote</p>
+                                <p>ValidKey</p>
                             </div>
                             <div class="card-btn">
                                 <p>Visit Site</p>
@@ -122,8 +123,8 @@
                         <p>Bringing users Imaginations to Life with code</p>
                     </div>
                     <div class="main-btn work-btn">
-                        <button class="hire-btn"><i class="fa fa-plus-circle" aria-hidden="true"></i> Hire Me</button>
-                        <button  class="coptBtn"  data-email="your.email@example.com" ><i class="fa fa-clone" aria-hidden="true"></i>
+                        <button class="hire-btn" onclick="openTab('contact')"><i class="fa fa-plus-circle" aria-hidden="true"></i> Hire Me</button>
+                        <button  class="coptBtn"  data-email="tobennaaustin@gmail.com" ><i class="fa fa-clone" aria-hidden="true"></i>
                             Copy Email</button>
                     </div>
                 </div>
@@ -135,26 +136,298 @@
                     </div>
 
                     <div class="social-btns">
-                        <button><img src="imagies/github.svg" alt="github-logo"></button>
-                        <button><img src="imagies/instagram.svg" alt="instagram-logo"></button>
-                        <button><img src="imagies/twitter.svg" alt="twitter-logo"></button>
-                        <button><img src="imagies/whatsapp.svg" alt="whatsapp-logo"></button>
+                        <button onclick="openGithub()"><img src="imagies/github.svg" alt="github-logo"></button>
+                        <button onclick="openInsta()"><img src="imagies/instagram.svg" alt="instagram-logo"></button>
+                        <button onclick="openTwitter()"><img src="imagies/twitter.svg" alt="twitter-logo"></button>
+                        <button onclick="openWhatsapp()"><img src="imagies/whatsapp.svg" alt="whatsapp-logo"></button>
                     </div>
                 </div>
 
                 <div class="footer">
                     <div class="footer-text">
                         <p>&copy;2024 Tobenna-Portfolio Side-project</p>
-                        <p>by <a href="index.html">Tobenna</a> Powered by <a href="">Vercel</a></p>
+                        <p>by <a href="index.html">Tobenna</a> Powered by <a href="https://vercel.com">Vercel</a></p>
                     </div>
                 </div>
             </div>
-            <div class="content" id="about" style="display:none;">Our Services include...</div>
-            <div class="content"  id="services" style="display:none;">About us...</div>
+            <div class="content" id="about" style="display:none;">
+                <div class="name">
+                    <div class="myName">
+                        <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                        <p>About</p>
+                    </div>
+                </div>
+                <div class="about-maincontent">
+                    <div class="contact-txt">
+                        <h3>It's Me Tobenna</h3>
+                        <p>
+                            I'm Teddy-Austin Tobenna Pascal, a web developer and an aspiring Cloud Engineer. I have over 3 years of experience in Web development.I'm currently residing in Lagos, Nigeria. I have deep passion for computer especially creating web interfaces. My main goal is to bridge the divide between people and technology, solving problems and turing them into meaningful and seamless experiences.
+                        </p>
+                    </div>
+
+                    <div class="about-image">
+                        <img src="imagies/profile(1).jpeg" alt="portfolio image">
+                    </div>
+
+                    <div class="contact-txt">
+                        <h3>More About Me</h3>
+                        <p>I am currently studying computer science in <a href="https://crawforduniversity.com">Crawford University</a> in Nigeria. I'm actively involved in some tech communities and I often participate in diverse tech conferences and meetups.</p>
+                        <p>I'm a certified Web developer at <a href="https://shuttern.com">Shutern</a> and also got certified in programming with javascript on <a href="https://sololearn.com">SoloLearn</a>. Apart from all that i have knowledge in the following programming languages: Python, C#, Java, PHP, Javascript. I,m also good in No-code development, I use tools like Wordpress, Bubble, Fluterflow etc. Least i forget I also make mobile apps using APACHE CORDOVA.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="work-text">
+                        <h2>Let’s work together.</h2>
+                        <p>Creating user experience and visual appealing design</p>
+                        <p>Bringing users Imaginations to Life with code</p>
+                    </div>
+                    <div class="main-btn work-btn">
+                        <button class="hire-btn" onclick="openTab('contact')"><i class="fa fa-plus-circle" aria-hidden="true"></i> Hire Me</button>
+                        <button  class="coptBtn"  data-email="tobennaaustin@gmail.com" ><i class="fa fa-clone" aria-hidden="true"></i>
+                            Copy Email</button>
+                    </div>
+                </div>
+
+                <div class="socials">
+                    <div class="myName social-text">
+                        <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                        <p>Follow Me</p>
+                    </div>
+
+                    <div class="social-btns">
+                        <button onclick="openGithub()"><img src="imagies/github.svg" alt="github-logo"></button>
+                        <button onclick="openInsta()"><img src="imagies/instagram.svg" alt="instagram-logo"></button>
+                        <button onclick="openTwitter()"><img src="imagies/twitter.svg" alt="twitter-logo"></button>
+                        <button onclick="openWhatsapp()"><img src="imagies/whatsapp.svg" alt="whatsapp-logo"></button>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <div class="footer-text">
+                        <p>&copy;2024 Tobenna-Portfolio Side-project</p>
+                        <p>by <a href="index.html">Tobenna</a> Powered by <a href="https://vercel.com">Vercel</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="content"  id="services" style="display:none;">
+                <div class="name">
+                    <div class="myName">
+                        <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                        <p>Projects</p>
+                    </div>
+                </div>
+                <div class="services-maincontent">
+                    <div class="contact-txt">
+                        <h3>Explore My Projects</h3>
+                        <p>Some of the digital products that I worked on as side projects, explore and try it now</p>
+                    </div>
+                    <div class="main-project">
+                        <div class="project-head">
+                            <div class="project-name">
+                                <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                                <p>Projects</p>
+                            </div>
+                            <!-- <div class="project-btn">
+                                <button onclick="openTab('services')">View More <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                            </div> -->
+                        </div>
+    
+                        <div class="project-cards">
+                            <div class="project-card" onclick="openPort()">
+                                <div class="card-text">
+                                    <img src="imagies/project-logo.png" alt="project icon">
+                                    <p>My portfolio</p>
+                                </div>
+                                <div class="card-btn">
+                                    <p>Visit Site</p>
+                                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div class="project-card" onclick="openNote()">
+                                <div class="card-text">
+                                    <img src="imagies/project-logo.png" alt="project icon">
+                                    <p>NoteBuddy</p>
+                                </div>
+                                <div class="card-btn">
+                                    <p>Visit Site</p>
+                                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div class="project-card" onclick="openVote()">
+                                <div class="card-text">
+                                    <img src="imagies/project-logo.png" alt="project icon">
+                                    <p>CRU NACOS vote</p>
+                                </div>
+                                <div class="card-btn">
+                                    <p>Visit Site</p>
+                                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div class="project-card" onclick="openValidkey()">
+                                <div class="card-text">
+                                    <img src="imagies/project-logo.png" alt="project icon">
+                                    <p>ValidKey</p>
+                                </div>
+                                <div class="card-btn">
+                                    <p>Visit Site</p>
+                                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div class="project-card" onclick="openWeather()">
+                                <div class="card-text">
+                                    <img src="imagies/project-logo.png" alt="project icon">
+                                    <p>Weather App</p>
+                                </div>
+                                <div class="card-btn">
+                                    <p>Visit Site</p>
+                                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div class="project-card" onclick="openToDO()">
+                                <div class="card-text">
+                                    <img src="imagies/project-logo.png" alt="project icon">
+                                    <p>TODO list app</p>
+                                </div>
+                                <div class="card-btn">
+                                    <p>Visit Site</p>
+                                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div class="project-card" onclick="openDigitalStudent()">
+                                <div class="card-text">
+                                    <img src="imagies/project-logo.png" alt="project icon">
+                                    <p>Digital Student Care </p>
+                                </div>
+                                <div class="card-btn">
+                                    <p>Visit Site</p>
+                                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div class="project-card" onclick="openResourceHub()">
+                                <div class="card-text">
+                                    <img src="imagies/project-logo.png" alt="project icon">
+                                    <p>ResourceHub</p>
+                                </div>
+                                <div class="card-btn">
+                                    <p>Visit Site</p>
+                                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div class="project-card" onclick="openQuizApp()">
+                                <div class="card-text">
+                                    <img src="imagies/project-logo.png" alt="project icon">
+                                    <p>Quiz App</p>
+                                </div>
+                                <div class="card-btn">
+                                    <p>Visit Site</p>
+                                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div class="project-card" onclick="openMusicPlayer()">
+                                <div class="card-text">
+                                    <img src="imagies/project-logo.png" alt="project icon">
+                                    <p>Music Player</p>
+                                </div>
+                                <div class="card-btn">
+                                    <p>Visit Site</p>
+                                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="work-text">
+                        <h2>Let’s work together.</h2>
+                        <p>Creating user experience and visual appealing design</p>
+                        <p>Bringing users Imaginations to Life with code</p>
+                    </div>
+                    <div class="main-btn work-btn">
+                        <button class="hire-btn" onclick="openTab('contact')"><i class="fa fa-plus-circle" aria-hidden="true"></i> Hire Me</button>
+                        <button  class="coptBtn"  data-email="tobennaaustin@gmail.com" ><i class="fa fa-clone" aria-hidden="true"></i>
+                            Copy Email</button>
+                    </div>
+                </div>
+
+                <div class="socials">
+                    <div class="myName social-text">
+                        <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                        <p>Follow Me</p>
+                    </div>
+
+                    <div class="social-btns">
+                        <button onclick="openGithub()"><img src="imagies/github.svg" alt="github-logo"></button>
+                        <button onclick="openInsta()"><img src="imagies/instagram.svg" alt="instagram-logo"></button>
+                        <button onclick="openTwitter()"><img src="imagies/twitter.svg" alt="twitter-logo"></button>
+                        <button onclick="openWhatsapp()"><img src="imagies/whatsapp.svg" alt="whatsapp-logo"></button>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <div class="footer-text">
+                        <p>&copy;2024 Tobenna-Portfolio Side-project</p>
+                        <p>by <a href="index.html">Tobenna</a> Powered by <a href="https://vercel.com">Vercel</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="content" id="contact" style="display: none;">
+                <div class="name">
+                    <div class="myName">
+                        <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                        <p>Hire Me</p>
+                    </div>
+                    <div class="mywork">
+                        <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                        <p>AVAILABLE FOR WORK</p>
+                    </div>
+                </div>
+
+                <div class="main-contact">
+                    <div class="contact-txt">
+                        <h3>Work Inquiry</h3>
+                        <p>Got an idea and need help? Reach out now</p>
+                    </div>
+
+                    <div class="contact-form">
+                        <form action="#">
+                            <div class="inquiry">
+                                <input type="text" name="name" id="" placeholder="Name" required>
+                                <input type="email" name="email" id="" placeholder="Email" required>
+                            </div>
+                            <div class="next">
+                                <textarea name="message" id="" cols="30" rows="10" required></textarea>
+                            <button type="submit">Submit Inquiry</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="socials">
+                    <div class="myName social-text">
+                        <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                        <p>Follow Me</p>
+                    </div>
+
+                    <div class="social-btns">
+                        <button onclick="openGithub()"><img src="imagies/github.svg" alt="github-logo"></button>
+                        <button onclick="openInsta()"><img src="imagies/instagram.svg" alt="instagram-logo"></button>
+                        <button onclick="openTwitter()"><img src="imagies/twitter.svg" alt="twitter-logo"></button>
+                        <button onclick="openWhatsapp()"><img src="imagies/whatsapp.svg" alt="whatsapp-logo"></button>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <div class="footer-text">
+                        <p>&copy;2024 Tobenna-Portfolio Side-project</p>
+                        <p>by <a href="index.html">Tobenna</a> Powered by <a href="https://vercel.com">Vercel</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
     <script src="JS/script.js"></script>
+    <script src="JS/nav.js"></script>
 </body>
 
 </html>
