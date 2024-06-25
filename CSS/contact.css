@@ -1,0 +1,123 @@
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name .myName {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.myName span {
+    font-size: 8px;
+    color: rgb(165, 162, 162);
+}
+
+.myName p {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.main-contact {
+    margin-top: 10%;
+}
+
+.contact-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-txt h3 {
+    font-size: 30px;
+}
+
+.contact-txt p {
+    color: var(--token-a541e07b-6fda-4d50-9a24-16076657b0a9);
+    font-size: 20px;
+}
+
+.contact-form {
+    margin-top: 8%;
+}
+
+.contact-form form .inquiry {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.inquiry input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(201, 192, 192, 0.162);
+    width: 60%;
+    height: 50px;
+    font-size: 20px;
+    outline: none;
+}
+
+.inquiry input::placeholder {
+    color: var(--token-a541e07b-6fda-4d50-9a24-16076657b0a9);
+}
+
+.contact-form .next {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.next textarea {
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(201, 192, 192, 0.162);
+    outline: none;
+    padding: 10px;
+    font-size: 19px;
+}
+
+.next button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    color: white;
+    background-color: black;
+}
+
+
+/* code for service tab */
+.services-maincontent {
+    margin-top: 10%;
+}
+
+.main-project {
+    margin-top: 10%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--token-4d7df182-8b47-4a03-9047-6812b16bd3f4);
+}
+
+/* code for about tab */
+.about-maincontent {
+    margin-top: 10%;
+}
+
+.about-image img {
+    width: 500px;
+    height: 500px;
+    object-fit: center;
+    border: 8px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.137);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: rgb(2, 2, 81);
+}
